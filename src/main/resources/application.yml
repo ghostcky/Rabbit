@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user
+    password: bitnami
+
+rabbitmq:
+  exchange: topic_exchange
+  queue: first_queue
+  routingkey: first.message
+
+server:
+  port: 8081
